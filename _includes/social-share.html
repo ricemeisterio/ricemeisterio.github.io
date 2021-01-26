@@ -12,9 +12,10 @@
 
     <!-- Email -->
     <a
-        href="mailto:?Subject={{ page.title }}&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ page.url | absolute_url | url_encode }}">
-        <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-    </a>
+        href="mailto:?Subject={{ page.title }}&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 {{ page.url | absolute_url | url_encode }}"
+        class="btn btn--email"
+        title="{{ site.data.ui-text[site.locale].share_on_label | default: 'Share via' }} Email">
+        <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span> Email</span></a>
 
     <!-- LinkedIn -->
     <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | url_encode }}"
